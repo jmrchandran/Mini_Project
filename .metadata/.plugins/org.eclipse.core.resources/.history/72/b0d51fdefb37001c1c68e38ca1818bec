@@ -1,0 +1,23 @@
+package com.minimize;
+
+import java.awt.Dimension;
+//import java.awt.Point;
+
+import org.openqa.selenium.Point;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Minimize {
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\Ramachandran\\eclipse-workspace\\Sel_Project\\chrome\\chromedriver_win32\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.facebook.com/");
+		driver.manage().window().maximize();
+//Dimension size=new Dimension(40,50);
+//driver.manage().window().setSize(new Dimension(500, 400));
+Point p=new Point(300,300);
+driver.manage().window().setPosition(p);
+
+	}
+}
