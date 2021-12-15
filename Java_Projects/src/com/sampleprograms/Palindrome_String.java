@@ -8,10 +8,13 @@ public static void main(String[]args) {
 	Scanner in=new Scanner(System.in);
 	System.out.println("Enter a string or number: ");
 	original=in.nextLine();
+	
 	int length =original.length();
 	for(int i=length-1;i>=0;i--)
 		reverse =reverse+original.charAt(i);
-	if(original.equals(reverse)) {
+	System.out.println(reverse);
+	if(original.equals(reverse)){
+//	if(original.equalsIgnoreCase(reverse)) {
 		System.out.println("palindrome");
 	}
 	else {

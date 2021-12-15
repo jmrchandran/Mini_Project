@@ -20,6 +20,7 @@ public class Mini_Project1 {
 	public static void main(String[] args) throws InterruptedException, AWTException, IOException {
 		System.setProperty("webdriver.chrome.driver",
 				"C:\\Users\\Ramachandran\\eclipse-workspace\\Sel_Project\\chrome\\chromedriver_win32\\chromedriver.exe");
+
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://automationpractice.com/index.php");
 		driver.manage().window().maximize();
